@@ -1,0 +1,51 @@
+<html>
+<STYLE>
+video {
+  width: 82%;
+  height: auto;
+  border-top: 2vw solid orange;
+  border-left: 2vw solid orange;
+  border-right: 2vw solid orange;
+  border-bottom: 10vw solid orange;
+  border-radius: 25px;
+}
+
+#user {
+	font-size: 50px;
+    width: 140px; 
+    background: blue; 
+	padding-top: 40px;
+    color:white
+}
+
+#tag {
+	font-size: 6vw;
+	position: absolute;
+	z-index: 1000;
+	background-color: #92AD40;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+</STYLE>
+<SCRIPT>
+function videoEnded() {	document.getElementById('Meme').style.visibility = 'hidden';
+							setTimeout(function(){
+								location.reload();
+							}, 3000000);
+						}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+						
+</SCRIPT>
+<body>
+    <figure>
+		<div id="tag" >TESTANDO</div>
+		<video id="Meme" autoplay="autoplay" src="DogoShootingStars.mp4" type="video/mp4" onended="videoEnded()">		
+		</video>
+    </figure>	  
+</body>
+</html>

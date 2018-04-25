@@ -1,0 +1,2 @@
+Client ID = vaw5c6k69k51xyp3vb54rmr9n7de4v
+Client Secret = tjmpm0j53im80314o7row40cwo4peo
